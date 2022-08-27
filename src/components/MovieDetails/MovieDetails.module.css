@@ -1,0 +1,47 @@
+.title {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.poster {
+  width: 40%;
+  height: auto;
+
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.centered {
+  text-align: center;
+}
+
+.links_container {
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  padding: 1rem 2rem;
+  color: black;
+  margin: 1rem;
+  text-shadow: 0px 0px 3px white;
+
+}
+
+.link_active {
+  color: black;
+  text-shadow: 0px 0px 3px white;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  border: 1px solid black;
+}

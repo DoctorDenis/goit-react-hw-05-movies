@@ -1,0 +1,25 @@
+.list {
+  list-style: none;
+}
+
+.list_item {
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: center;
+  justify-items: center;
+}
+
+.image {
+  height: 200px;
+  width: auto;
+  display: inline-block;
+
+}
+
+.name {
+  display: inline;
+}
