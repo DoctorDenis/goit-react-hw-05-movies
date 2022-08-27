@@ -1,8 +1,9 @@
 import noImage from '../../images/no_img.jpg';
 import { Card } from './MovieCard.styled';
+import PropTypes from 'prop-types';
 
 export function MovieCard({ movie }) {
-  const { poster_path: img, title, release_date } = movie;
+  const { img, title, release_date } = movie;
   return (
     <Card>
       <img
@@ -15,3 +16,11 @@ export function MovieCard({ movie }) {
     </Card>
   );
 }
+
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    img: PropTypes.string,
+    title: PropTypes.string.isRequired,
+    release_date: PropTypes.string.isRequired,
+  }),
+};

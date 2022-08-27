@@ -41,3 +41,8 @@ a {
 ul {
   list-style: none;
 }
+
+.link_to_home {
+  text-decoration: underline;
+  color: blue;
+}
