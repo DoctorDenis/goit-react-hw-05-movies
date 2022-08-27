@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/DoctorDenis/goit-react-hw-05-movies.git/static/css/main.d8445584.css",
+    "main.js": "/DoctorDenis/goit-react-hw-05-movies.git/static/js/main.bed40fa5.js",
+    "static/js/842.4051b7cc.chunk.js": "/DoctorDenis/goit-react-hw-05-movies.git/static/js/842.4051b7cc.chunk.js",
+    "static/js/886.99de8381.chunk.js": "/DoctorDenis/goit-react-hw-05-movies.git/static/js/886.99de8381.chunk.js",
+    "static/css/76.f1593cb0.chunk.css": "/DoctorDenis/goit-react-hw-05-movies.git/static/css/76.f1593cb0.chunk.css",
+    "static/js/76.1fde5d8d.chunk.js": "/DoctorDenis/goit-react-hw-05-movies.git/static/js/76.1fde5d8d.chunk.js",
+    "static/js/186.87af72ef.chunk.js": "/DoctorDenis/goit-react-hw-05-movies.git/static/js/186.87af72ef.chunk.js",
+    "static/media/no_img.jpg": "/DoctorDenis/goit-react-hw-05-movies.git/static/media/no_img.7890204a39d30fbb37ae.jpg",
+    "index.html": "/DoctorDenis/goit-react-hw-05-movies.git/index.html",
+    "static/media/icon-search.svg": "/DoctorDenis/goit-react-hw-05-movies.git/static/media/icon-search.c79c933b3ca45e10a90fcbda71aa1228.svg",
+    "main.d8445584.css.map": "/DoctorDenis/goit-react-hw-05-movies.git/static/css/main.d8445584.css.map",
+    "main.bed40fa5.js.map": "/DoctorDenis/goit-react-hw-05-movies.git/static/js/main.bed40fa5.js.map",
+    "842.4051b7cc.chunk.js.map": "/DoctorDenis/goit-react-hw-05-movies.git/static/js/842.4051b7cc.chunk.js.map",
+    "886.99de8381.chunk.js.map": "/DoctorDenis/goit-react-hw-05-movies.git/static/js/886.99de8381.chunk.js.map",
+    "76.f1593cb0.chunk.css.map": "/DoctorDenis/goit-react-hw-05-movies.git/static/css/76.f1593cb0.chunk.css.map",
+    "76.1fde5d8d.chunk.js.map": "/DoctorDenis/goit-react-hw-05-movies.git/static/js/76.1fde5d8d.chunk.js.map",
+    "186.87af72ef.chunk.js.map": "/DoctorDenis/goit-react-hw-05-movies.git/static/js/186.87af72ef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8445584.css",
+    "static/js/main.bed40fa5.js"
+  ]
+}
