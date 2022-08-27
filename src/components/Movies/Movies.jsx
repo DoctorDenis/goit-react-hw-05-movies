@@ -24,7 +24,6 @@ export default function Movies() {
     if (!query) {
       return;
     }
-    console.log(query);
 
     fetchInfo(`/search/movie`, { query: query }).then(async data => {
       setMoviesList(await data.data.results);

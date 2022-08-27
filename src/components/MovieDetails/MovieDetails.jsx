@@ -5,7 +5,7 @@ import {
   useNavigate,
   useLocation,
 } from 'react-router-dom';
-import { useEffect, useState, Suspense } from 'react';
+import { useEffect, useState, Suspense, useRef } from 'react';
 import { fetchInfo } from '../../helpers/fetchAPI';
 import styles from './MovieDetails.module.css';
 import noImage from '../../images/no_img.jpg';
@@ -19,12 +19,21 @@ export function MovieDetails() {
   const { movieId } = useParams();
   const navigate = useNavigate();
   const location = useLocation();
+  // const [path, setPath] = useState();
+  const { current: pathObj } = useRef(location?.state?.from);
 
   useEffect(() => {
     fetchInfo(`/movie/${movieId}`).then(async response =>
       setMovieInfo(await response.data)
     );
   }, [movieId]);
+
+  // useEffect(() => {
+  //   setPath(async () => (path = await location?.state?.from));
+  //   console.log(location?.state?.from);
+  //   console.log(path);
+  //   // eslint-disable-next-line
+  // }, []);
 
   const {
     title,
@@ -35,9 +44,7 @@ export function MovieDetails() {
   } = movieInfo;
   return (
     <>
-      <button onClick={() => navigate(location?.state?.from ?? '/')}>
-        {'<'} Back
-      </button>
+      <button onClick={() => navigate(pathObj ?? '/')}>{'<'} Back</button>
       <h2 className={styles.title}>{title}</h2>
       <div className={styles.container}>
         <img
