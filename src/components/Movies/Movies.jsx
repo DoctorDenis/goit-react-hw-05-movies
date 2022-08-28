@@ -2,8 +2,10 @@ import { fetchInfo } from 'helpers/fetchAPI';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { MovieCard } from 'components/MovieCard/MovieCard';
-import { StyledUl } from 'components/Home/Home.styled';
+import { StyledUl } from 'components/Movies/Movies.styled';
 import { useSearchParams, useLocation } from 'react-router-dom';
+import fetchEntriesFromMovies from 'helpers/fetchEntriesFromMovies';
+
 // import { StyledInput } from './Movies.styled';
 import {
   StyledForm,
@@ -26,7 +28,8 @@ export default function Movies() {
     }
 
     fetchInfo(`/search/movie`, { query: query }).then(async data => {
-      setMoviesList(await data.data.results);
+      const filteredArray = fetchEntriesFromMovies(await data.data.results);
+      setMoviesList(filteredArray);
     });
   }, [query]);
 

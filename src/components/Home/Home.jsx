@@ -1,8 +1,9 @@
 import { fetchInfo } from 'helpers/fetchAPI';
 import { useState, useEffect } from 'react';
-import { StyledUl } from './Home.styled';
-import { MovieCard } from '../MovieCard/MovieCard';
-import { StyledLink } from './Home.styled';
+// import { StyledUl } from './Home.styled';
+// import { MovieCard } from '../MovieCard/MovieCard';
+import { MoviesList } from '../MoviesList/MoviesList';
+// import { StyledLink } from './Home.styled';
 import fetchEntriesFromMovies from 'helpers/fetchEntriesFromMovies';
 
 export default function Home() {
@@ -14,18 +15,5 @@ export default function Home() {
     });
   }, []);
 
-  return (
-    <StyledUl>
-      {movies.map(
-        movie =>
-          (movie = (
-            <li key={movie.id}>
-              <StyledLink to={`movies/${movie.id}`}>
-                <MovieCard movie={movie} />
-              </StyledLink>
-            </li>
-          ))
-      )}
-    </StyledUl>
-  );
+  return <MoviesList movies={movies} />;
 }

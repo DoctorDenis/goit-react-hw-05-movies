@@ -29,3 +29,14 @@ export const IconStyles = {
   fill: 'grey',
   cursor: 'pointer',
 };
+
+export const StyledUl = styled.ul`
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  & li:nth-child(2n) {
+    background-color: #b7b4b4;
+  }
+`;
